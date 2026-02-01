@@ -23,6 +23,11 @@
   * Mage: Magic Bolt and Light Burst
   * Ranger: Bow and Arrow
   * Barbarian: Crush and Lift
+* Dying and Game Over:
+  * If a player dies, they aren't removed from the game, but must instead receive penalties.
+    * First, the player drops all of the items and loot they've collected up to that point.  This loot is claimable by any player that comes across it.
+    * Second, the player must wait for a short time before being returned to the starting room of the dungeon.  They must then make their way through the dungeon again.
+  * If all four players die before any of them could respawn into the starting room, the party experiences a game over and are removed from the dungeon.  Don't worry, the ID seed of the dungeon is still remembered in case the players want to try it again.
 * Characters act as keys to specific obstacles, forcing players to work together to complete the dungeon.
   * Enemies
     * Goblin: Use the Knight to parry its attack and then counter attack when it's stunned.
