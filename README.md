@@ -18,7 +18,7 @@
 
 ### Dungeons
 * Dungeons are generated using a seed system, allowing players to replay their favorite levels or share levels with friends.
-* All dungeons require four characters to complete.
+* All dungeons require four characters to complete:
   * Knight: Sword and Shield
   * Mage: Magic Bolt and Light Burst
   * Ranger: Bow and Arrow
@@ -51,18 +51,44 @@
 
 ## Getting Started
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
 ### Requirements
+
+**Unity Hub**
+**Unity Version:** '6000.3.6f1' (or minimum recommended patch version)
+**Target Platforms:** 'Windows' (Requires the Windows Build Support module installed via Uninty Hub)
 
 ### Installation
 
-1. Clone the repository: 'https://github.com/3Dever96/ProjectHazard.git'
-2. Open the project in Unity Editor.
+1. **Clone the repository:**
+bash
+git clone https://github.com/3Dever96/ProjectHazard.git
+
+2. **Open in Unity**
+* Open **Unity Hub**.
+* Click **"Add Project from Disk"**.
+* Navigate to the cloud directory and select the root folder.
+* Ensure the correct Unity Editor Version ('6000.3.6f1') is selected in the Hub and open the project.
+
+3. **Run the Project:**
+* Once the Editor loads, navigate to the primary scene file (usually in 'Assets/Scenes/').
+* Press the **Play** button in the Unity Editor to begin.
 
 ## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create.  Any contributions you make are **greatly appreciated**.
+
+* Please adhere to the **https://leotgo.github.io/unity-coding-standards/** before submitting code.
+
+1. Fork the Project
+2. Create you Feature Branch ('git checkout -b Feature/AmazingFeature')
+3. Commit you Changes ('git commit -m 'Add some AmazingFeature'')
+4. Push to the Remote Branch ('git push origin Feature/AmazaingFeature')
+5. Open a Pull Request
 
 ## License
 
 This project is licensed under the MIT License- see the LICENSE file for details.
 
 ## Acknowledgments
-
