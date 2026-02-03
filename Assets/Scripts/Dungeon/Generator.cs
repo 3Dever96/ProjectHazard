@@ -1,17 +1,16 @@
+using ProjectHazard.Dungeon;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Generator : MonoBehaviour
 {
-    public int levelID;
-    public int roomCount;
-
     public Dictionary<Vector2Int, RoomData> dungeon = new Dictionary<Vector2Int, RoomData>();
     public List<Vector2Int> positions = new List<Vector2Int>();
     List<Vector2Int> validBossPositions = new List<Vector2Int>();
     RoomData startRoom;
     RoomData mBossRoom;
     RoomData bossRoom;
+    int roomCount;
 
     System.Random sequence;
 
@@ -21,7 +20,7 @@ public class Generator : MonoBehaviour
 
     void Start()
     {
-        GenerateLevel(levelID);
+        GenerateLevel(DungeonManager.instance.levelID);
     }
 
     public void GenerateLevel(int seed)
@@ -29,6 +28,8 @@ public class Generator : MonoBehaviour
         sequence = new System.Random(seed);
         dungeon.Clear();
         positions.Clear();
+
+        roomCount = sequence.Next(28, 64);
 
         biome = sequence.Next(8);
 
