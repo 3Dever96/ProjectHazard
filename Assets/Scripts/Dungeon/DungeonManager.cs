@@ -47,13 +47,6 @@ namespace ProjectHazard.Dungeon
                 {
                     netLevelID.Value = (int)(System.DateTime.Now.Ticks & 0x7FFFFFFF);
 
-                    GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-
-                    for (var i = players.Length - 1; i >= 0; i--)
-                    {
-                        Destroy(players[i]);
-                    }
-
                     NetworkManager.Singleton.SceneManager.LoadScene("Dungeon", LoadSceneMode.Single);
                 }
             }
